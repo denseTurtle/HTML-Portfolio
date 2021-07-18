@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.leftSide {
+    display: flex;
+}
+
+.navWrapper > .leftSide > div { /* navigating to left side divs and modifying the style */
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    /*modifying margins, font size and that all text is in uppercase*/
+}
+
+.navWrapper > .rightSide > div {
+    text-transform: uppercase;
+}
+.navLinkWrapper {
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.navLinkWrapper a {
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.navLinkWrapper:hover {
+    border-bottom: 1px solid black;
+}
+.navLinkWrapper a:hover {
+    color: black;
+} /* adding the invisible underline for the links that appears when mouse is put on top of them*/
