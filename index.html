@@ -5,38 +5,69 @@
     <title>Nima Pishva</title>
     <link rel="stylesheet" href="styles.css"
 </head>
+
 <body>
-
     <div class="container">
-
-        <div class="navWrapper">
-
-            <div class="leftSide">
-
-                <div class="navLinkWrapper">
-                    <a href="index.html">Home</a> 
-                </div>
-
-                <div class="navLinkWrapper">
-                    <a href="index.html">About</a> 
-                </div>
-                
-                <div class="navLinkWrapper">
-                    <a href="https://github.com/denseTurtle">GitHub</a> <!--links that lead to socials-->
-                </div>
-
-                <div class="navLinkWrapper">
-                    <!--links that lead to socials-->
-                    <a href="https://www.linkedin.com/in/nima-pishva-997538167/">LinkedIn</a>
-                </div>
-            </div>
-
-            <div class="rightSide">
-                <div class="brand">
-                    <div>Nima Pishva</div>
-                </div>  
-            </div>
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html">Home</a>
+          </div>
+  
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
         </div>
-</div>
-</body>
+
+  
+        <div class="right-side">
+          <div class="brand">
+            Nima Pishva
+          </div>
+        </div>
+      </div>
+  
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/mainPage.JPG)"></div>
+  
+            <div class="img-text-wrapper">
+              <div class="subtitle">Portfolio website from scratch using HTML, CSS and Javascript.</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">Implemented Java to create 4 player board game called Malefiz with different difficulty modes, Save & Load game features as well as colourblind modes.</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">Using Automation Anywhere, created a bot that would scan emails sent to the Human Resource department for Job applications and then download and move them into a designated folder.</div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolioItemWrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
 </html>
