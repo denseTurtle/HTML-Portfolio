@@ -1,4 +1,6 @@
-# HTML-Portfolio
-resume website using html, css and Javascript
-download the file as zip
-using your browser open the index.html file. (Command + O on Mac or Ctrl + O on Windows)
+# To access my portoflio website
+
+Unzip the folder on your desktop
+Go to a browser, press CTRL + O for Windows or COMMAND + O for Mac
+Select index.html file 
+Click Open
