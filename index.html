@@ -13,10 +13,27 @@
           <div class="nav-link-wrapper active-nav-link">
             <a href="index.html">Home</a>
           </div>
-  
+          
+        
           <div class="nav-link-wrapper">
             <a href="about.html">About</a>
           </div>
+
+          <div class="nav-link-wrapper">
+            <!--links that lead to socials-->
+            <a href="https://www.linkedin.com/in/nima-pishva-997538167/">LinkedIn</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="https://github.com/denseTurtle">GitHub</a> <!--links that lead to socials-->
+      </div>
+      
+      <div class="nav-link-wrapper">
+        <a href="Nima_Pishva_Resume.pdf" download>
+          My Resume
+        </a>
+      </div>
+     
         </div>
 
   
@@ -39,9 +56,11 @@
           </div>
   
           <div class="portfolio-item-wrapper">
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+            <div class="portfolio-img-background" style= "background-image: url(images/portfolio2.jpg);">
+              <div class="overlay"></div>
+            </div>
             <div class="img-text-wrapper">
-              <div class="subtitle">Implemented Java to create 4 player board game called Malefiz with different difficulty modes, Save & Load game features as well as colourblind modes.</div>
+              <div class="subtitle">Implemented Java to create 4 player board game called Malefiz with different difficulty modes, Save & Load game features as well as colourblind modes. </div>
             </div>
           </div>
 
@@ -62,11 +81,11 @@
 
     portfolioItems.forEach(portfolioItem => {
         portfolioItem.addEventListener('mouseover', () => {
-            portfolioItem.childNodes[1].classList.add('img-darken');
+            portfolioItem.childNodes[1].classList.add(img-darken);
         })
 
         portfolioItem.addEventListener('mouseout', () => {
-            portfolioItem.childNodes[1].classList.remove('img-darken');
+            portfolioItem.childNodes[1].classList.remove(img-darken);
         })
     })
 </script>
